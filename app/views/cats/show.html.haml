@@ -1,0 +1,18 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @cat.name
+%p
+  %b Breed:
+  = @cat.breed
+%p
+  %b Age:
+  = @cat.age
+%p
+  %b Owner email:
+  = @cat.owner_email
+
+= link_to 'Edit', edit_cat_path(@cat)
+\|
+= link_to 'Back', cats_path

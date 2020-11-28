@@ -1,0 +1,6 @@
+%h1 cats
+%ul
+  - @cats.each do |cat|
+    %li
+      = cat.name + " " + cat.breed + " " + cat.age.to_s + " " + cat.owner_email
+      = link_to "Hide", "", class: 'hide', data: {'js-hide-link' => true}

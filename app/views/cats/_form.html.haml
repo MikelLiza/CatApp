@@ -1,0 +1,22 @@
+= form_for @cat, :html => {:id => "CatForm"} do |f|
+  - if @cat.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@cat.errors.count, "error")} prohibited this cat from being saved:"
+      %ul
+        - @cat.errors.full_messages.each do |message|
+          %li= message
+
+  .field
+    = f.label :name
+    = f.text_field :name
+  .field
+    = f.label :breed
+    = f.text_field :breed
+  .field
+    = f.label :age
+    = f.number_field :age
+  .field
+    = f.label :owner_email
+    = f.text_field :owner_email
+  .actions
+    = f.submit 'Save'

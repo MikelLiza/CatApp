@@ -1,0 +1,19 @@
+%h1{id: "welcome_id"} Welcome to my site
+%p{id: "welcomep"} This is a welcoming paragraph
+
+%h2{id: "wf", onclick: "ToggleText(this)"} Web Form
+%p{id: "wfp"} Some text about my web form
+
+%h2{id: "tb", onclick: "ToggleText(this)"} Resource Table
+%p{id: "tbp"} Some text about my resource
+
+%h2{id: "game", onclick: "ToggleText(this)"} Game
+%p{id: "gamep"} Some text about my game
+
+%input#smallb{onclick: "SetFontSize('80%')", type: "button", value: "Small"}
+%input#mediumb{onclick: "SetFontSize('100%')", type: "button", value: "Medium"}
+%input#largeb{onclick: "SetFontSize('120%')", type: "button", value: "Large"}
+
+%p
+%input#normalb{onclick: "SetPageStyle('Normal')", type: "button", value: "Normal"}
+%input#darkb{onclick: "SetPageStyle('Dark%')", type: "button", value: "Dark"}
